@@ -45,6 +45,10 @@ class PredictionInput(BaseModel):
 def home():
     return {"message": "FastAPI ML model is running"}
 
+@app.get("/")
+def root():
+    return {"message": "Send POST requests to /predict for predictions"}
+
 # Prediction route
 @app.post("/predict")
 def predict(data: PredictionInput):
