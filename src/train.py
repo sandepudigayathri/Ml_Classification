@@ -1,6 +1,6 @@
 import pandas as pd
 import joblib
-from sklearn.tree import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import KFold
 from sklearn.pipeline import Pipeline
 from src.preprocessing import Preprocessing
